@@ -22,10 +22,7 @@ class Body extends StatelessWidget {
               ),
               Text(
                 "Forgot Password",
-                style: TextStyle(
-                    fontSize: getProportionateScreenWidth(28),
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
+                style: headingStyle,
               ),
               Text(
                 "Please enter your email and we will send you a link to return to your account",

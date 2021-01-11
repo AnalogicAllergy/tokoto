@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'size_config.dart';
+
 const kPrimaryColor = Color(0xffFF7643);
 const kPrimaryLightColor = Color(0xffffecdf);
 const kPrimaryGradientColor = LinearGradient(
@@ -9,6 +11,12 @@ const kPrimaryGradientColor = LinearGradient(
 const kSecondaryColor = Color(0xff979797);
 const kTextColor = Color(0xff757575);
 const kAnimationDuration = Duration(milliseconds: 200);
+
+final headingStyle = TextStyle(
+    color: Colors.black,
+    fontWeight: FontWeight.bold,
+    fontSize: getProportionateScreenWidth(28),
+    height: 1.5);
 
 const String kEmailNullError = "Please enter your email";
 const String kInvalidEmailError = "Please enter a valid email";

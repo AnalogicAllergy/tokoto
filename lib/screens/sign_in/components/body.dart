@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:tokoto/components/custom_suffix_icon.dart';
-import 'package:tokoto/components/default_button.dart';
-import 'package:tokoto/components/form_error.dart';
+
 import 'package:tokoto/components/no_account.dart';
 import 'package:tokoto/components/social_card.dart';
 
@@ -23,11 +20,7 @@ class Body extends StatelessWidget {
             child: Column(
               children: [
                 SizedBox(height: SizeConfig.screenHeight * 0.04),
-                Text("Welcome back!",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: getProportionateScreenWidth(28),
-                        fontWeight: FontWeight.bold)),
+                Text("Welcome back!", style: headingStyle),
                 Text(
                   "Sign in with your email and password \nor continue with social media",
                   textAlign: TextAlign.center,
