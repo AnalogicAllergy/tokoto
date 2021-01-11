@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tokoto/constants.dart';
 import 'package:tokoto/routes.dart';
 import 'package:tokoto/screens/splash/splash_screen.dart';
+import 'package:tokoto/theme.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,14 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tokoto',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-        fontFamily: 'Muli',
-        textTheme: TextTheme(
-            bodyText1: TextStyle(color: kTextColor),
-            bodyText2: TextStyle(color: kTextColor)),
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      theme: theme(),
       initialRoute: SplashScreen.routeName,
       routes: routes,
     );

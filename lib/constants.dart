@@ -9,3 +9,10 @@ const kPrimaryGradientColor = LinearGradient(
 const kSecondaryColor = Color(0xff979797);
 const kTextColor = Color(0xff757575);
 const kAnimationDuration = Duration(milliseconds: 200);
+
+const String kEmailNullError = "Please enter your email";
+const String kInvalidEmailError = "Please enter a valid email";
+const String kPasswordNullError = "Please enter your password";
+const String kShortPasswordError = "Password is too short";
+const String kPasswordMatchError = "Passwords dont match";
+final RegExp kEmailRegex = RegExp(r"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$");

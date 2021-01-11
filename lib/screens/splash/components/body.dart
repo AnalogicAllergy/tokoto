@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tokoto/components/default_button.dart';
 import 'package:tokoto/constants.dart';
+import 'package:tokoto/screens/sign_in/sign_in_screen.dart';
 import 'package:tokoto/size_config.dart';
 
 import '../components/splash_content.dart';
@@ -60,7 +61,9 @@ class _BodyState extends State<Body> {
                     Spacer(flex: 3),
                     DefaultButton(
                       text: "Continue",
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, SignInScreen.routeName);
+                      },
                     ),
                     Spacer()
                   ]),
