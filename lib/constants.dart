@@ -17,10 +17,27 @@ final headingStyle = TextStyle(
     fontWeight: FontWeight.bold,
     fontSize: getProportionateScreenWidth(28),
     height: 1.5);
+final otpInputDecoration = InputDecoration(
+    contentPadding:
+        EdgeInsets.symmetric(vertical: getProportionateScreenWidth(15)),
+    focusedBorder: outlineInputBorder(),
+    border: outlineInputBorder(),
+    enabledBorder: outlineInputBorder());
+
+OutlineInputBorder outlineInputBorder() {
+  return OutlineInputBorder(
+      borderRadius: BorderRadius.circular(15),
+      borderSide: BorderSide(color: kTextColor));
+}
 
 const String kEmailNullError = "Please enter your email";
 const String kInvalidEmailError = "Please enter a valid email";
 const String kPasswordNullError = "Please enter your password";
 const String kShortPasswordError = "Password is too short";
 const String kPasswordMatchError = "Passwords dont match";
+const String kNameTooShort = "Name is too short";
+const String kNameNullError = "Name must be provided";
+const String kPhoneNumberBadFormat = "Phone number is not in adequate format";
+const String kPhoneNullError = "Phone number must be provided";
+const String kAddressNullError = "Address must be provided";
 final RegExp kEmailRegex = RegExp(r"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$");

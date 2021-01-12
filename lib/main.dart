@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tokoto/constants.dart';
 import 'package:tokoto/routes.dart';
 import 'package:tokoto/screens/splash/splash_screen.dart';
 import 'package:tokoto/theme.dart';
