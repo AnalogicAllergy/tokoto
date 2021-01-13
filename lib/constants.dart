@@ -10,6 +10,7 @@ const kPrimaryGradientColor = LinearGradient(
     colors: [Color(0xffffa53e), Color(0xffff7643)]);
 const kSecondaryColor = Color(0xff979797);
 const kTextColor = Color(0xff757575);
+const kTestPurple = Color(0xff4a3298);
 const kAnimationDuration = Duration(milliseconds: 200);
 
 final headingStyle = TextStyle(

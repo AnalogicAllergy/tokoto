@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tokoto/components/default_button.dart';
+import 'package:tokoto/screens/home/home_screen.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
@@ -40,7 +41,12 @@ class Body extends StatelessWidget {
               SizedBox(height: SizeConfig.screenHeight * 0.16),
               OtpForm(),
               SizedBox(height: SizeConfig.screenHeight * 0.16),
-              DefaultButton(text: "Continue", onPressed: () {}),
+              DefaultButton(
+                  text: "Continue",
+                  onPressed: () {
+                    //TODO navigate to home screen
+                    Navigator.pushNamed(context, HomeScreen.routeName);
+                  }),
               SizedBox(height: SizeConfig.screenHeight * 0.16),
               Text(
                 "Resend OTP code",
