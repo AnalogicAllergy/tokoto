@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:tokoto/screens/details/details_screen.dart';
 import 'package:tokoto/screens/otp/otp_screen.dart';
 import 'package:tokoto/screens/splash/splash_screen.dart';
 
@@ -18,4 +19,5 @@ final Map<String, WidgetBuilder> routes = {
   CompleteProfileScreen.routeName: (context) => CompleteProfileScreen(),
   OTPScreen.routeName: (context) => OTPScreen(),
   HomeScreen.routeName: (context) => HomeScreen(),
+  DetailsScreen.routeName: (context) => DetailsScreen(),
 };

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tokoto/components/default_button.dart';
+import 'package:tokoto/screens/home/home_screen.dart';
 import 'package:tokoto/screens/sign_in/sign_in_screen.dart';
 
 import '../../size_config.dart';
@@ -32,7 +33,7 @@ class Body extends StatelessWidget {
               child: DefaultButton(
                   text: "Back to home",
                   onPressed: () {
-                    Navigator.pushNamed(context, SignInScreen.routeName);
+                    Navigator.pushNamed(context, HomeScreen.routeName);
                   }),
             ),
             Spacer()

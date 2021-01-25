@@ -12,6 +12,9 @@ const kSecondaryColor = Color(0xff979797);
 const kTextColor = Color(0xff757575);
 const kTestPurple = Color(0xff4a3298);
 const kAnimationDuration = Duration(milliseconds: 200);
+const kBackgroundGrey = Color(0xfff5f6f9);
+const kSomeColor = Color(0xffffe6e6);
+const kHeartColor = Color(0xffff4848);
 
 final headingStyle = TextStyle(
     color: Colors.black,

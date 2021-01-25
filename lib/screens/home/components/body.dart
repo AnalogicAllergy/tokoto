@@ -1,15 +1,9 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../constants.dart';
 import '../../../size_config.dart';
 import 'categories.dart';
-import 'categories_card.dart';
 import 'discount_banner.dart';
 import 'home_header.dart';
-import 'popular_products_card.dart';
 import 'popular_products_carousel.dart';
 import 'row_special_section.dart';
 import 'specials_carousel.dart';
