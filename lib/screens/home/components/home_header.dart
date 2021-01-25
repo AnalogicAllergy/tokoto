@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tokoto/screens/cart/cart_screen.dart';
 
 import '../../../size_config.dart';
 import 'icon_counter_button.dart';
@@ -19,7 +20,10 @@ class HomeHeader extends StatelessWidget {
         children: [
           SearchField(),
           IconCounterButton(
-              imagePath: 'assets/icons/Cart Icon.svg', press: () {}),
+              imagePath: 'assets/icons/Cart Icon.svg',
+              press: () {
+                Navigator.pushNamed(context, CartScreen.routeName);
+              }),
           IconCounterButton(
               imagePath: 'assets/icons/Bell.svg',
               itemCount: 5,

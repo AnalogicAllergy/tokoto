@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tokoto/components/default_button.dart';
 import 'package:tokoto/components/rounded_icon_button.dart';
 import 'package:tokoto/model/product.dart';
+import 'package:tokoto/screens/cart/cart_screen.dart';
 import 'package:tokoto/screens/details/components/product_description.dart';
 
 import '../../../constants.dart';
@@ -48,7 +49,11 @@ class Body extends StatelessWidget {
                   right: SizeConfig.screenWidth * 0.15,
                   top: getProportionateScreenWidth(15),
                   bottom: getProportionateScreenWidth(40)),
-              child: DefaultButton(text: "Add to Cart", onPressed: () {}),
+              child: DefaultButton(
+                  text: "Add to Cart",
+                  onPressed: () {
+                    Navigator.pushNamed(context, CartScreen.routeName);
+                  }),
             ),
           )
         ],
