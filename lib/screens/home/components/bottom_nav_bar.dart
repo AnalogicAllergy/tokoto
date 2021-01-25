@@ -21,6 +21,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
   void handleChange(int i) {
     setState(() {
       _selectedTab = _SelectedTab.values[i];
+      if (_selectedTab == _SelectedTab.profile) {
+        Navigator.pushNamed(context, '/profile');
+      }
     });
   }
 

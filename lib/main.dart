@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Tokoto',
       debugShowCheckedModeBanner: false,
       theme: theme(),
+      //for coding reasons we will change the initial route to profile
       initialRoute: SplashScreen.routeName,
       routes: routes,
     );

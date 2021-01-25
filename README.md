@@ -4,9 +4,4 @@ Tokoto - E-Commerce UI KIT is designed with modern design trends. Small or large
 
 ## App running
 
-![](screens/demo.gif)
-
-## Screenshots
-
-![](screens/01.png)
-![](screens/02.png)
+![](screens/final.gif)
